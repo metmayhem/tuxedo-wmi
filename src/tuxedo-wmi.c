@@ -774,7 +774,7 @@ static ssize_t kb_bl_state_store(struct device *dev,
 }
 
 static struct device_attribute kb_bl_state =
-	__ATTR(kb_bl_state, 0666, kb_bl_state_show, kb_bl_state_store);
+	__ATTR(kb_bl_state, 0660, kb_bl_state_show, kb_bl_state_store);
 
 static struct attribute *kb_bl_attrs[] = {
 	&kb_bl_state.attr,
